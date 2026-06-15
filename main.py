@@ -6,9 +6,9 @@ def get_qr_data():
     return qr_data
 
 def create_qr_code(qr_data):
-    # img = qrcode.make("Test")
-    # type(img)
-    # img.save("test_file.png")
+    img = qrcode.make(qr_data)
+    type(img)
+    img.save("test_file.png")
 
 if __name__ == "__main__":
     qr_data = get_qr_data()
