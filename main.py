@@ -13,6 +13,7 @@ def create_qr_code(file_name, qr_data):
     img.save(f"{file_name}.png")
 
 if __name__ == "__main__":
-    file_name = get_qr_info()["file_name"]
-    qr_data = get_qr_info()["qr_data"]
+    qr_info = get_qr_info()
+    file_name = qr_info["file_name"]
+    qr_data = qr_info["qr_data"]
     create_qr_code(file_name=file_name, qr_data=qr_data)
