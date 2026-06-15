@@ -8,3 +8,6 @@ def get_qr_data():
 # img = qrcode.make("Test")
 # type(img)
 # img.save("test_file.png")
+
+if __name__ == "__main__":
+    get_qr_data()
