@@ -1,10 +1,9 @@
 import qrcode
 
 def get_qr_info():
-    print("Enter QR code file name:")
-    file_name = input()
-    print("Enter QR code data:")
-    qr_data = input()
+    file_name = input("Enter QR code file name:")
+    qr_data = input("Enter QR code data:")
+    print(f"Generating file: {file_name} with {qr_data}")
     return {"file_name": file_name, "qr_data": qr_data}
 
 def create_qr_code(file_name, qr_data):
