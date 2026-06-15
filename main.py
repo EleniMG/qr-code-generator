@@ -1,5 +1,10 @@
 import qrcode
 
-img = qrcode.make("Test")
-type(img)
-img.save("test_file.png")
+def get_qr_data():
+    print("Enter QR code data:")
+    data = input()
+    print(data)
+
+# img = qrcode.make("Test")
+# type(img)
+# img.save("test_file.png")
